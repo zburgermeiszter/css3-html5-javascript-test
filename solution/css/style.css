@@ -1,0 +1,89 @@
+body {
+    background: #e2e9ed;
+    color: #112433;
+}
+
+header p {
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+main {
+    display: table;
+}
+
+main article {
+    display: block;
+    clear: both;
+}
+main article aside {
+    border: 1px solid black;
+    display: table-cell;
+    width: 20%;
+    text-align: right;
+    padding: 20px 40px;
+}
+
+main article section {
+    display: table-cell;
+    width: 80%;
+}
+
+main article:nth-of-type(even) {
+    background: #7a3052;
+    color: #e2e9ed;
+}
+
+
+main article section h1 {
+    font-weight: bold;
+}
+
+
+/* SPRITES */
+.sprite {
+    display: inline-block;
+    background: url('../images/sprites/thumbs.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.sprite .thumb-up-dark,
+main article:nth-of-type(odd) i.sprite.up {
+    background-position: -1px -33px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite .thumb-down-dark,
+main article:nth-of-type(odd) i.sprite.down {
+    background-position: -1px -0px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite .thumb-up-light,
+main article:nth-of-type(even) i.sprite.up {
+    background-position: -34px -33px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite .thumb-down-light,
+main article:nth-of-type(even) i.sprite.down {
+    background-position: -34px -0px;
+    width: 32px;
+    height: 32px;
+}
