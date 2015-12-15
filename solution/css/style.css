@@ -1,10 +1,27 @@
 body {
     background: #e2e9ed;
     color: #112433;
+    font-family: 'Arial Regular', sans-serif;
+    font-size: 14pt;
+}
+
+header {
+    display: flex;
+    padding: 32px 0 32px 20%;
+    margin-left: -210px;
 }
 
 header p {
     text-transform: uppercase;
+    width: 200px;
+    font-size: 60pt;
+    font-weight: bold;
+    line-height: 45pt;
+    padding-left: 24px;
+}
+
+nav {
+    padding: 24px 0 24px 20%;
 }
 
 nav ul {
@@ -17,6 +34,9 @@ nav ul li {
 
 nav ul li a {
     text-transform: uppercase;
+    text-decoration: none;
+    color: #112433;
+    margin-right: 60px;
 }
 
 main {
@@ -24,20 +44,8 @@ main {
 }
 
 main article {
-    display: block;
-    clear: both;
-}
-main article aside {
-    border: 1px solid black;
-    display: table-cell;
-    width: 20%;
-    text-align: right;
-    padding: 20px 40px;
-}
-
-main article section {
-    display: table-cell;
-    width: 80%;
+    display: flex;
+    padding: 12px 0;
 }
 
 main article:nth-of-type(even) {
@@ -45,11 +53,52 @@ main article:nth-of-type(even) {
     color: #e2e9ed;
 }
 
+main > article > aside {
+    padding: 56px 20px;
+    line-height: 34px;
+    display: flex;
+    margin-left: auto;
+}
 
-main article section h1 {
+main > article > aside > span {
+    padding: 0 6px;
+    font-style: italic;
     font-weight: bold;
 }
 
+main article section {
+    width: 80%;
+}
+
+main article section h1 {
+    font-family: 'Arial Bold', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 16px 0;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+main article section p {
+    padding-bottom: 12px;
+}
+
+main article section .tags {
+    padding: 12px 0 12px 0;
+}
+
+main article section .tags span {
+    color: #80878c;
+    padding-right: 12px;
+}
+
+footer {
+    background-color: #112433;
+    color: #e2e9ed;
+    padding: 12px 0 12px 20%;
+    font-family: 'Arial Regular', sans-serif;
+    font-size: 12pt;
+}
 
 /* SPRITES */
 .sprite {
