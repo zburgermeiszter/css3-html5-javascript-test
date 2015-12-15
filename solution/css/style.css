@@ -60,10 +60,14 @@ main > article > aside {
     margin-left: auto;
 }
 
-main > article > aside > span {
+main > article > aside > .counter {
     padding: 0 6px;
     font-style: italic;
     font-weight: bold;
+}
+
+main article aside a {
+    cursor: pointer;
 }
 
 main article section {
@@ -110,28 +114,28 @@ footer {
 }
 
 .sprite .thumb-up-dark,
-main article:nth-of-type(odd) i.sprite.up {
+main article:nth-of-type(odd) .sprite.up {
     background-position: -1px -33px;
     width: 32px;
     height: 32px;
 }
 
 .sprite .thumb-down-dark,
-main article:nth-of-type(odd) i.sprite.down {
+main article:nth-of-type(odd) .sprite.down {
     background-position: -1px -0px;
     width: 32px;
     height: 32px;
 }
 
 .sprite .thumb-up-light,
-main article:nth-of-type(even) i.sprite.up {
+main article:nth-of-type(even) .sprite.up {
     background-position: -34px -33px;
     width: 32px;
     height: 32px;
 }
 
 .sprite .thumb-down-light,
-main article:nth-of-type(even) i.sprite.down {
+main article:nth-of-type(even) .sprite.down {
     background-position: -34px -0px;
     width: 32px;
     height: 32px;
